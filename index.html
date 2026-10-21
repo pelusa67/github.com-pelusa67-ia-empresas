@@ -1,0 +1,693 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Umbral · Cómo la IA está transformando a las empresas</title>
+<meta name="description" content="Ruta de aprendizaje interactiva sobre cómo la inteligencia artificial transforma a las empresas: adopción, inversión, brecha de valor, empleo, México, riesgos, futuro e ingeniería de prompts. Datos 2025–2026.">
+<meta name="author" content="Angel Israel Orozco Cortés">
+<meta name="theme-color" content="#0E2433">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Umbral · Cómo la IA está transformando a las empresas">
+<meta property="og:description" content="Una ruta de aprendizaje interactiva con datos de Stanford, McKinsey, Gartner, el Foro Económico Mundial, la OIT y la CEPAL.">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,500&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+<script>
+  // Aplica el tema guardado antes de pintar para evitar parpadeo
+  try { var t = localStorage.getItem('umbral-theme'); if (t) document.documentElement.setAttribute('data-theme', t); } catch (e) {}
+  document.documentElement.classList.add('js');
+</script>
+</head>
+<body>
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+<!-- =================== ENCABEZADO =================== -->
+<header class="site-header">
+  <div class="header-bar">
+    <a class="brand" href="#inicio" aria-label="Umbral, ir al inicio">
+      <svg viewBox="0 0 48 48" aria-hidden="true">
+        <rect x="8" y="6" width="32" height="6" rx="2" fill="var(--petrol)"/>
+        <rect x="8" y="10" width="6" height="30" rx="2" fill="var(--petrol)"/>
+        <rect x="34" y="10" width="6" height="30" rx="2" fill="var(--petrol)"/>
+        <path d="M17 34 L24 26 L31 18" stroke="var(--sky)" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+        <circle cx="17" cy="34" r="2.8" fill="var(--sky)"/>
+        <circle cx="24" cy="26" r="2.8" fill="var(--sky)"/>
+        <circle cx="31" cy="18" r="3.4" fill="var(--amber)"/>
+        <rect x="4" y="41" width="40" height="3" rx="1.5" fill="var(--petrol)"/>
+      </svg>
+      <span><span class="brand-name">Umbral</span><span class="brand-sub">Ruta de aprendizaje · IA y empresa</span></span>
+    </a>
+
+    <span class="progress-pill" aria-live="polite">
+      <svg class="ring" viewBox="0 0 32 32" aria-hidden="true">
+        <circle class="ring-bg" cx="16" cy="16" r="13"/>
+        <circle class="ring-fg" cx="16" cy="16" r="13" stroke-dasharray="81.68" stroke-dashoffset="81.68"/>
+      </svg>
+      <span><span id="done-count">0</span>/<span id="total-count">13</span><span class="label-long"> módulos</span></span>
+    </span>
+
+    <button class="icon-btn" type="button" id="open-glossary" aria-haspopup="dialog">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 19.5V5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2"/><path d="M8 7h7M8 11h5"/></svg>
+      <span class="txt">Glosario</span>
+    </button>
+    <button class="icon-btn" type="button" id="theme-toggle" aria-label="Cambiar tema claro u oscuro">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+    </button>
+  </div>
+
+  <nav class="rail" id="rail" aria-label="Módulos de la ruta de aprendizaje"></nav>
+  <div class="scroll-bar" aria-hidden="true"><span id="scroll-bar"></span></div>
+</header>
+
+<main id="contenido">
+
+<!-- =================== PORTADA =================== -->
+<section class="hero" id="inicio" aria-labelledby="hero-title">
+  <div class="hero-grid">
+    <div>
+      <p class="kicker">Ruta de aprendizaje interactiva · 2026</p>
+      <h1 id="hero-title">Casi todas las empresas usan IA. <em>Pocas ganan dinero con ella.</em></h1>
+      <p>Recorre en 13 módulos cómo la inteligencia artificial está transformando a las empresas: qué tanto se usa, dónde genera valor, cómo cambia el empleo, por qué México va rezagado, qué riesgos trae y cómo pedirle a una IA lo que necesitas.</p>
+      <div class="hero-actions">
+        <a class="btn btn-amber" href="#ruta">Comenzar la ruta</a>
+        <a class="btn btn-ghost" href="#m13">Ir a la evaluación</a>
+      </div>
+      <div class="hero-meta">
+        <span>13 módulos · 45 min aprox.</span>
+        <span>Tu avance se guarda en este navegador</span>
+      </div>
+    </div>
+
+    <figure class="gap-viz reveal" aria-labelledby="gap-title" style="margin:0">
+      <h2 id="gap-title">La brecha de valor</h2>
+      <p class="muted">Usar la IA no es lo mismo que obtener utilidades de ella.</p>
+      <div class="gap-line">
+        <div class="top"><span>Organizaciones que usan IA en al menos una función</span><b>88 %</b></div>
+        <div class="track" role="img" aria-label="88 por ciento"><i class="use"></i></div>
+      </div>
+      <div class="gap-line">
+        <div class="top"><span>Organizaciones que ven impacto en sus utilidades</span><b>37 %</b></div>
+        <div class="track" role="img" aria-label="37 por ciento"><i class="val"></i></div>
+        <div class="gap-bracket" aria-hidden="true"><span>51 puntos de brecha</span></div>
+      </div>
+      <figcaption class="src">Stanford HAI, AI Index 2026 · McKinsey, The State of AI 2026</figcaption>
+    </figure>
+  </div>
+  <a class="scroll-cue" href="#ruta">Desliza</a>
+</section>
+
+<!-- =================== MAPA DE LA RUTA =================== -->
+<section class="band alt" id="ruta" aria-labelledby="ruta-title">
+  <div class="inner">
+    <div class="module-head">
+      <span class="eyebrow">Cómo usar esta página</span>
+      <h2 id="ruta-title">Tu ruta de aprendizaje</h2>
+      <p class="objective">Cada módulo tiene un objetivo, una actividad interactiva y una idea clave. Al terminar de leerlo se marca como completado. Las palabras <button class="term" type="button" data-term="subrayadas">subrayadas</button> abren su definición.</p>
+    </div>
+    <div class="route" id="route-map"></div>
+  </div>
+</section>
+
+<!-- =================== M1 ADOPCIÓN =================== -->
+<section class="band module" id="m1" data-title="Adopción" data-desc="Qué tanto usan la IA las empresas" data-min="4" aria-labelledby="m1-title">
+  <div class="inner">
+    <div class="module-head">
+      <span class="eyebrow"><span class="num">01</span> Adopción <span class="time">· 4 min</span></span>
+      <h2 id="m1-title">Una adopción amplia, pero superficial</h2>
+      <p class="objective"><b>Aprenderás</b> a distinguir entre usar la IA e integrarla, y por qué dos cifras de México que parecen contradecirse son correctas.</p>
+    </div>
+
+    <div class="stats reveal">
+      <div class="stat"><b data-count="88" data-suffix=" %">88 %</b><span>de las organizaciones usaba IA en 2025, frente a 55 % en 2023</span><cite>Stanford HAI, 2026</cite></div>
+      <div class="stat"><b data-count="70" data-suffix=" %">70 %</b><span>usa <button class="term" type="button" data-term="ia-generativa">IA generativa</button> en al menos una función</span><cite>Stanford HAI, 2026</cite></div>
+      <div class="stat key"><b data-count="44" data-suffix=" %">44 %</b><span>ha logrado <button class="term" type="button" data-term="escalar">escalar</button> la IA en toda la empresa (38 % un año antes)</span><cite>McKinsey, 2026</cite></div>
+      <div class="stat"><b>1 dígito</b><span>es el nivel de despliegue de <button class="term" type="button" data-term="agente">agentes de IA</button> en casi todas las funciones</span><cite>Stanford HAI, 2026</cite></div>
+    </div>
+
+    <h3 class="sub">México: ¿48 % o 4.8 %?</h3>
+    <p>Dos estudios recientes parecen contradecirse. Selecciona cada factor para ver por qué no lo hacen.</p>
+
+    <div class="versus reveal">
+      <div><b>48 %</b><p class="what">de las organizaciones mexicanas usa IA</p><p>Strand Partners para AWS, 2026. El 63 % está en etapa básica y solo 13 % en avanzada. Banxico reporta 48.5 % en empresas de más de 100 trabajadores (junio de 2026).</p></div>
+      <div><b>4.8 %</b><p class="what">de las manufactureras con más de 10 empleados usa IA</p><p>Secretaría de Economía con datos de los Censos Económicos 2024 del INEGI, que describen 2023. Promedio nacional: 8 %, frente a 10 % en Estados Unidos.</p></div>
+    </div>
+
+    <div class="seg" role="tablist" aria-label="Factores que explican la diferencia" data-tabs="factor">
+      <button role="tab" aria-selected="true" aria-controls="f-periodo" id="t-periodo">Periodo</button>
+      <button role="tab" aria-selected="false" aria-controls="f-universo" id="t-universo" tabindex="-1">Universo</button>
+      <button role="tab" aria-selected="false" aria-controls="f-definicion" id="t-definicion" tabindex="-1">Definición</button>
+      <button role="tab" aria-selected="false" aria-controls="f-metodo" id="t-metodo" tabindex="-1">Método</button>
+    </div>
+    <div class="panel factor-panel" role="tabpanel" id="f-periodo" aria-labelledby="t-periodo">
+      <div><h4>Encuesta (48 %)</h4><p>Mide el uso en 2026, después de la expansión de la IA generativa.</p></div>
+      <div><h4>Censo (4.8 %)</h4><p>Describe el año 2023, antes de que la IA generativa se popularizara.</p></div>
+    </div>
+    <div class="panel factor-panel" role="tabpanel" id="f-universo" aria-labelledby="t-universo" hidden>
+      <div><h4>Encuesta (48 %)</h4><p>Incluye empresas de todos los tamaños y sectores.</p></div>
+      <div><h4>Censo (4.8 %)</h4><p>Solo cuenta manufactureras con más de 10 empleados.</p></div>
+    </div>
+    <div class="panel factor-panel" role="tabpanel" id="f-definicion" aria-labelledby="t-definicion" hidden>
+      <div><h4>Encuesta (48 %)</h4><p>Cuenta cualquier uso, incluso un empleado que consulta un asistente de chat.</p></div>
+      <div><h4>Censo (4.8 %)</h4><p>Pregunta por IA integrada a los procesos, agrupada con la robótica.</p></div>
+    </div>
+    <div class="panel factor-panel" role="tabpanel" id="f-metodo" aria-labelledby="t-metodo" hidden>
+      <div><h4>Encuesta (48 %)</h4><p>Encargada por un proveedor de tecnología, con respuestas autodeclaradas.</p></div>
+      <div><h4>Censo (4.8 %)</h4><p>Levantamiento estadístico oficial del INEGI.</p></div>
+    </div>
+    <p class="verdict">Ambas cifras son correctas: muchas empresas usan la IA de forma superficial, y pocas la han integrado a su operación.</p>
+    <p class="src">Dentro de la manufactura la diferencia también es enorme: 15.1 % en cómputo y electrónica frente a 0.6 % en la industria de la madera (Centro México Digital, 2026).</p>
+
+    <div class="takeaway"><p>Usar la IA no es integrarla: la adopción es amplia, pero todavía superficial.</p><a class="next-btn" href="#m2">Siguiente: Inversión →</a></div>
+  </div>
+</section>
+
+<!-- =================== M2 INVERSIÓN =================== -->
+<section class="band alt module" id="m2" data-title="Inversión" data-desc="Cuánto se gasta y en qué" data-min="3" aria-labelledby="m2-title">
+  <div class="inner">
+    <div class="module-head">
+      <span class="eyebrow"><span class="num">02</span> Inversión <span class="time">· 3 min</span></span>
+      <h2 id="m2-title">Inversión récord, concentrada en infraestructura</h2>
+      <p class="objective"><b>Aprenderás</b> hacia dónde va el dinero de la IA y qué tan concentrado está en pocos países.</p>
+    </div>
+
+    <div class="stats reveal">
+      <div class="stat key"><b>2.67 billones</b><span>de dólares de gasto mundial en IA en 2026, un 49.5 % más que en 2025</span><cite>Gartner, 2026</cite></div>
+      <div class="stat"><b>3.64 billones</b><span>de dólares proyectados para 2027</span><cite>Gartner, 2026</cite></div>
+      <div class="stat"><b>1 de cada 5</b><span>empresas ya limita su uso de IA por los costos de operación</span><cite>McKinsey, 2026</cite></div>
+    </div>
+
+    <h3 class="sub">Explora los datos</h3>
+    <div class="seg" role="tablist" aria-label="Conjunto de datos" data-tabs="invest">
+      <button role="tab" aria-selected="true" aria-controls="inv-market" id="t-market">Gasto 2026 por mercado</button>
+      <button role="tab" aria-selected="false" aria-controls="inv-region" id="t-region" tabindex="-1">Inversión privada 2025 por región</button>
+    </div>
+    <div class="panel" role="tabpanel" id="inv-market" aria-labelledby="t-market">
+      <ul class="chart" data-chart="market" aria-label="Gasto mundial en IA por mercado, 2026, miles de millones de dólares"></ul>
+      <p class="src">Miles de millones de dólares, pronóstico 2026. Fuente: Gartner, septiembre de 2026.</p>
+    </div>
+    <div class="panel" role="tabpanel" id="inv-region" aria-labelledby="t-region" hidden>
+      <ul class="chart" data-chart="region" aria-label="Inversión privada en IA por región, 2025, miles de millones de dólares"></ul>
+      <p class="src">Miles de millones de dólares, 2025. La inversión corporativa global total fue de 581,690 millones, más del doble que en 2024. Fuente: Stanford HAI, 2026.</p>
+    </div>
+    <p style="margin-top:24px">Para la empresa usuaria típica, la IA llega sobre todo como funciones integradas en el software que ya contrata, no como grandes proyectos propios (Gartner, 2026).</p>
+
+    <div class="takeaway"><p>Más de la mitad del gasto se va a centros de datos y equipo; las empresas usuarias compran IA dentro de su software.</p><a class="next-btn" href="#m3">Siguiente: Brecha de valor →</a></div>
+  </div>
+</section>
+
+<!-- =================== M3 BRECHA DE VALOR =================== -->
+<section class="band module" id="m3" data-title="Brecha de valor" data-desc="Productividad sin utilidades" data-min="5" aria-labelledby="m3-title">
+  <div class="inner">
+    <div class="module-head">
+      <span class="eyebrow"><span class="num">03</span> Brecha de valor <span class="time">· 5 min</span></span>
+      <h2 id="m3-title">Más productividad, pocas utilidades</h2>
+      <p class="objective"><b>Aprenderás</b> por qué la mejora individual no llega automáticamente al estado de resultados, y qué hacen distinto las empresas que sí lo logran.</p>
+    </div>
+
+    <p class="lead">Sube por la escalera: en cada nivel la evidencia se debilita. Selecciona un escalón para ver el dato.</p>
+    <div class="ladder reveal" id="ladder">
+      <button type="button" aria-expanded="true" aria-controls="l1"><span class="lv">Tarea</span><span class="lq">¿La IA hace más rápido el trabajo?</span><span class="ln">+14 %</span></button>
+      <div class="ld" id="l1">Un asistente de IA aumentó 14 % los casos resueltos por hora en 5,179 agentes de soporte, y 34 % en los novatos (Brynjolfsson, Li y Raymond, NBER, 2023).</div>
+      <button type="button" aria-expanded="false" aria-controls="l2"><span class="lv">Persona</span><span class="lq">¿Los empleados se sienten más productivos?</span><span class="ln">80 %</span></button>
+      <div class="ld" id="l2" hidden>El 80 % dice que la IA mejoró su productividad y 50 % que le ayuda a decidir mejor (McKinsey, 2026).</div>
+      <button type="button" aria-expanded="false" aria-controls="l3"><span class="lv">Sector</span><span class="lq">¿Crece la productividad de las empresas expuestas?</span><span class="ln">34 vs 24 %</span></button>
+      <div class="ld" id="l3" hidden>Las empresas más expuestas a la IA crecieron 34 % en productividad entre 2018 y 2025, frente a 24 % de las menos expuestas (PwC, 2026).</div>
+      <button type="button" aria-expanded="false" aria-controls="l4"><span class="lv">Utilidades</span><span class="lq">¿Aparece en el <span class="term-inline">EBIT</span>?</span><span class="ln">37 %</span></button>
+      <div class="ld" id="l4" hidden>Solo 37 % ve impacto en su <button class="term" type="button" data-term="ebit">EBIT</button>, y apenas 6 % atribuye a la IA 5 % o más de él (McKinsey, 2026).</div>
+      <button type="button" aria-expanded="false" aria-controls="l5"><span class="lv">Dirección</span><span class="lq">¿El CEO puede demostrar el retorno?</span><span class="ln">44 % no</span></button>
+      <div class="ld" id="l5" hidden>El 44 % de los CEO no logra demostrar a sus accionistas el retorno financiero de la IA (Gartner, 2026; encuesta a 203 CEO).</div>
+    </div>
+
+    <h3 class="sub">Seis razones de la brecha</h3>
+    <div class="cols-2">
+      <div class="acc">
+        <details><summary>Tiempo liberado no es costo ahorrado</summary><div class="acc-body"><p>Si las horas ahorradas no se usan para vender más o gastar menos, la nómina y los costos siguen igual. <strong>En la oficina:</strong> el auxiliar termina la conciliación en dos horas en vez de cinco, pero si nadie le asigna otra tarea, el ahorro no existe en el estado de resultados.</p></div></details>
+        <details><summary>El cuello de botella está en otro lado</summary><div class="acc-body"><p>Redactar un reporte en una hora no sirve si su aprobación tarda cinco días. La IA acelera un paso, no el proceso completo.</p></div></details>
+        <details><summary>La IA tiene costos ocultos</summary><div class="acc-body"><p>Integración, limpieza de datos, capacitación, seguridad y consumo de cómputo. Una de cada cinco empresas ya limita su uso por costos.</p></div></details>
+      </div>
+      <div class="acc">
+        <details><summary>Revisar también cuesta</summary><div class="acc-body"><p>Parte del tiempo ahorrado se usa en verificar los resultados de la IA, sobre todo en tareas donde un error es caro.</p></div></details>
+        <details><summary>Es difícil medir el efecto</summary><div class="acc-body"><p>Separar el aporte de la IA de otros factores es complejo, y muchas empresas no definieron una métrica antes de empezar.</p></div></details>
+        <details><summary>La competencia se lleva parte del beneficio</summary><div class="acc-body"><p>Si todo un sector adopta IA, el ahorro suele trasladarse al cliente en precios más bajos o mejor servicio.</p></div></details>
+      </div>
+    </div>
+
+    <h3 class="sub">Qué hacen distinto las empresas de alto desempeño</h3>
+    <div class="split reveal" id="redesign">
+      <div class="row"><span>Alto desempeño que rediseñó flujos de trabajo</span><div class="twin"><i data-w="75">≈ 3 de cada 4</i></div></div>
+      <div class="row"><span>Resto de las empresas</span><div class="twin"><i data-w="25">≈ 1 de cada 4</i></div></div>
+    </div>
+    <p class="src">McKinsey, 2026. Además, 63 % de los CEO ve el rediseño del modelo operativo como la principal palanca de retorno (Gartner, 2026).</p>
+    <p style="margin-top:20px"><strong>Analogía histórica:</strong> entre la llegada de la electricidad a las fábricas y el gran salto de productividad pasaron unos 30 años. El beneficio llegó cuando se reorganizó el trabajo alrededor de la nueva tecnología, no cuando se cambió el motor de vapor por uno eléctrico.</p>
+
+    <div class="takeaway"><p>El valor no está en la herramienta, sino en rediseñar el <button class="term" type="button" data-term="flujo">flujo de trabajo</button> completo.</p><a class="next-btn" href="#m4">Siguiente: Casos →</a></div>
+  </div>
+</section>
+
+<!-- =================== M4 CASOS =================== -->
+<section class="band alt module" id="m4" data-title="Casos" data-desc="Empresas reales y sus resultados" data-min="3" aria-labelledby="m4-title">
+  <div class="inner">
+    <div class="module-head">
+      <span class="eyebrow"><span class="num">04</span> Casos empresariales <span class="time">· 3 min</span></span>
+      <h2 id="m4-title">Tres empresas, tres lecciones</h2>
+      <p class="objective"><b>Aprenderás</b> qué hizo cada empresa, qué resultado reportó y qué lección deja para cualquier organización.</p>
+    </div>
+    <div class="cases">
+      <article class="case reveal" data-case>
+        <span class="tag">Comercio electrónico</span>
+        <h4>Mercado Libre</h4>
+        <div class="seg" role="tablist" aria-label="Mercado Libre"><button role="tab" aria-selected="true">Qué hizo</button><button role="tab" aria-selected="false" tabindex="-1">Resultado</button><button role="tab" aria-selected="false" tabindex="-1">Lección</button></div>
+        <div class="panel" role="tabpanel"><p>Rediseñó con IA el buscador de sus cinco mercados principales.</p></div>
+        <div class="panel" role="tabpanel" hidden><p>El aumento en conversión y clics superó el costo de los modelos de lenguaje: uno de los pocos casos que reporta explícitamente beneficio mayor que costo.</p></div>
+        <div class="panel" role="tabpanel" hidden><p>Aplicar la IA a un proceso con métrica clara (la conversión) permite demostrar el retorno.</p></div>
+        <p class="src">Mercado Libre, resultados del 2.º trimestre de 2026</p>
+      </article>
+      <article class="case reveal" data-case>
+        <span class="tag">Banca</span>
+        <h4>BBVA</h4>
+        <div class="seg" role="tablist" aria-label="BBVA"><button role="tab" aria-selected="true">Qué hizo</button><button role="tab" aria-selected="false" tabindex="-1">Resultado</button><button role="tab" aria-selected="false" tabindex="-1">Lección</button></div>
+        <div class="panel" role="tabpanel"><p>Probó un asistente de IA con 11,000 empleados antes de extenderlo a 120,000 en 25 países.</p></div>
+        <div class="panel" role="tabpanel" hidden><p>Los equipos ahorraron casi tres horas por semana en tareas rutinarias.</p></div>
+        <div class="panel" role="tabpanel" hidden><p>Pilotear, medir y luego escalar reduce el riesgo de una inversión masiva sin evidencia.</p></div>
+        <p class="src">OpenAI y BBVA, 2025</p>
+      </article>
+      <article class="case reveal" data-case>
+        <span class="tag lesson">Caso de advertencia</span>
+        <h4>Klarna</h4>
+        <div class="seg" role="tablist" aria-label="Klarna"><button role="tab" aria-selected="true">Qué hizo</button><button role="tab" aria-selected="false" tabindex="-1">Resultado</button><button role="tab" aria-selected="false" tabindex="-1">Lección</button></div>
+        <div class="panel" role="tabpanel"><p>Su asistente atendió dos tercios de los chats de clientes en su primer mes; la empresa lo equiparó al trabajo de 700 agentes.</p></div>
+        <div class="panel" role="tabpanel" hidden><p>Después volvió a contratar personas para garantizar que el cliente siempre pueda hablar con un humano.</p></div>
+        <div class="panel" role="tabpanel" hidden><p>Automatizar sin cuidar la calidad del servicio puede salir caro: la IA complementa, no sustituye por completo.</p></div>
+        <p class="src">Klarna, 2024; OpenAI, 2024; declaraciones de su director general, 2025</p>
+      </article>
+    </div>
+    <p class="src" style="margin-top:16px">Las cifras son reportadas por las propias empresas y no constituyen auditorías independientes.</p>
+    <div class="takeaway"><p>Los casos exitosos miden un resultado de negocio; los fallidos miden solo el ahorro.</p><a class="next-btn" href="#m5">Siguiente: Empleo →</a></div>
+  </div>
+</section>
+
+<!-- =================== M5 EMPLEO =================== -->
+<section class="band module" id="m5" data-title="Empleo" data-desc="Puestos en riesgo y en crecimiento" data-min="5" aria-labelledby="m5-title">
+  <div class="inner">
+    <div class="module-head">
+      <span class="eyebrow"><span class="num">05</span> Empleo <span class="time">· 5 min</span></span>
+      <h2 id="m5-title">Más transformación que sustitución</h2>
+      <p class="objective"><b>Aprenderás</b> qué puestos disminuyen, cuáles crecen y qué pasa con contabilidad y recursos humanos.</p>
+    </div>
+
+    <div class="stats reveal">
+      <div class="stat"><b>+78 M</b><span>empleos netos hacia 2030: 170 millones creados y 92 millones desplazados</span><cite>Foro Económico Mundial, 2025</cite></div>
+      <div class="stat"><b>1 de 4</b><span>empleos está expuesto a la IA generativa; 3.3 % en la categoría más alta</span><cite>OIT, 2025</cite></div>
+      <div class="stat key"><b>−13 %</b><span>de empleo relativo para jóvenes de 22 a 25 años en ocupaciones muy expuestas</span><cite>Brynjolfsson, Chandar y Chen, 2025</cite></div>
+      <div class="stat"><b>62 %</b><span>de <button class="term" type="button" data-term="prima">prima salarial</button> promedio por habilidades de IA</span><cite>PwC, 2026</cite></div>
+    </div>
+
+    <h3 class="sub">Empleos creados frente a desplazados, 2025–2030</h3>
+    <ul class="chart reveal" data-chart="jobs" aria-label="Empleos creados y desplazados hacia 2030, millones"></ul>
+    <p class="src">Millones de empleos. Fuente: Foro Económico Mundial, Future of Jobs Report 2025.</p>
+
+    <h3 class="sub">Explorador de puestos</h3>
+    <p>Selecciona un puesto para ver su nivel de exposición y cómo cambia su trabajo.</p>
+    <div class="explorer reveal">
+      <div class="role-list" role="tablist" aria-label="Puestos" id="role-list"></div>
+      <div class="role-detail" role="tabpanel" id="role-detail" aria-live="polite"></div>
+    </div>
+    <p class="src">Elaboración con base en Foro Económico Mundial (2025), Gartner (2025–2026), SHRM (2026) y PwC (2026). El nivel de exposición es cualitativo.</p>
+
+    <div class="takeaway"><p>La IA automatiza tareas, no profesiones: el puesto que solo captura desaparece; el que interpreta y decide, se transforma.</p><a class="next-btn" href="#m6">Siguiente: Habilidades →</a></div>
+  </div>
+</section>
+
+<!-- =================== M6 HABILIDADES =================== -->
+<section class="band alt module" id="m6" data-title="Habilidades" data-desc="Universidades y competencias" data-min="3" aria-labelledby="m6-title">
+  <div class="inner">
+    <div class="module-head">
+      <span class="eyebrow"><span class="num">06</span> Habilidades y universidades <span class="time">· 3 min</span></span>
+      <h2 id="m6-title">La universidad va detrás del mercado</h2>
+      <p class="objective"><b>Aprenderás</b> qué tan preparados salen los estudiantes y qué peso tienen las habilidades humanas frente a las técnicas.</p>
+    </div>
+
+    <ul class="chart reveal" data-chart="skills" aria-label="Indicadores de preparación en IA, porcentaje"></ul>
+    <p class="src">Digital Education Council (2024); CarringtonCrisp (2026); Pearson y AWS (2026); Foro Económico Mundial (2025); SEP (2025).</p>
+
+    <h3 class="sub">El balance de habilidades</h3>
+    <div class="balance reveal">
+      <div><span class="role">Boleto de entrada</span><h4>Técnicas</h4><ul><li>Manejo de datos y analítica</li><li>Herramientas de IA y automatización</li><li>Seguridad y privacidad de la información</li></ul></div>
+      <div><span class="role">Lo que diferencia y perdura</span><h4>Humanas</h4><ul><li>Pensamiento analítico: 7 de cada 10 empresas lo consideran esencial</li><li>Comunicación y trabajo con otros</li><li>Adaptabilidad y aprendizaje continuo</li></ul></div>
+      <div class="hybrid"><span class="role">La más escasa</span><h4>Híbrida</h4><p style="margin:0">Evaluar con criterio lo que produce la IA: saber cuándo confiar, qué verificar y quién firma.</p></div>
+    </div>
+    <p class="src">Cerca de 40 % de las habilidades clave cambiará hacia 2030 y 63 % de los empleadores ve la brecha de habilidades como su principal obstáculo (Foro Económico Mundial, 2025).</p>
+
+    <div class="takeaway"><p>Las habilidades técnicas abren la puerta; las humanas y el criterio sobre la IA son las que sostienen la carrera.</p><a class="next-btn" href="#m7">Siguiente: México →</a></div>
+  </div>
+</section>
+
+<!-- =================== M7 MÉXICO Y LATAM =================== -->
+<section class="band module" id="m7" data-title="México" data-desc="El Índice Latinoamericano de IA" data-min="4" aria-labelledby="m7-title">
+  <div class="inner">
+    <div class="module-head">
+      <span class="eyebrow"><span class="num">07</span> América Latina y México <span class="time">· 4 min</span></span>
+      <h2 id="m7-title">México bajó del sexto al octavo lugar</h2>
+      <p class="objective"><b>Aprenderás</b> por qué una de las economías más grandes de la región va rezagada en el <button class="term" type="button" data-term="ilia">ILIA</button>, y qué hacen distinto los líderes.</p>
+    </div>
+
+    <h3 class="sub" style="margin-top:0">Países adoptantes del índice (0 a 100)</h3>
+    <ul class="chart reveal" data-chart="ilia" aria-label="Puntaje ILIA 2025 de países adoptantes"></ul>
+    <p class="src">Chile, Brasil y Uruguay superan el umbral de 60 puntos que define a un país pionero. Fuente: CEPAL y CENIA, ILIA 2025.</p>
+
+    <h3 class="sub">Dónde está la brecha</h3>
+    <div class="split reveal" id="mx-gap">
+      <div class="row"><span>Talento humano · México</span><div class="twin"><i data-w="37.67">37.67</i></div></div>
+      <div class="row"><span>Talento humano · Chile</span><div class="twin"><i data-w="66.75">66.75</i></div></div>
+      <div class="row"><span>I+D · México (% del PIB)</span><div class="twin"><i data-w="23.5">0.27 %</i></div></div>
+      <div class="row"><span>I+D · Brasil (% del PIB)</span><div class="twin"><i data-w="100">1.15 %</i></div></div>
+    </div>
+    <p class="src">El puntaje de talento de México cayó de 43.91 en 2024 a 37.67. Las barras de I+D están escaladas respecto a Brasil. Toda América Latina recibe 1.12 % de la inversión mundial en IA (CEPAL y CENIA, 2025).</p>
+
+    <h3 class="sub">Qué hacen distinto los líderes</h3>
+    <div class="seg" role="tablist" aria-label="Países" data-tabs="country">
+      <button role="tab" aria-selected="true" aria-controls="c-chile" id="t-chile">Chile</button>
+      <button role="tab" aria-selected="false" aria-controls="c-brasil" id="t-brasil" tabindex="-1">Brasil</button>
+      <button role="tab" aria-selected="false" aria-controls="c-uruguay" id="t-uruguay" tabindex="-1">Uruguay</button>
+      <button role="tab" aria-selected="false" aria-controls="c-mexico" id="t-mexico" tabindex="-1">México</button>
+    </div>
+    <div class="panel" role="tabpanel" id="c-chile" aria-labelledby="t-chile"><p class="lead">Política Nacional de IA desde 2021, con ejes de talento, infraestructura y ética. Creó el CENIA y lanzó en 2026 Latam-GPT, un modelo abierto entrenado con datos de la región.</p></div>
+    <div class="panel" role="tabpanel" id="c-brasil" aria-labelledby="t-brasil" hidden><p class="lead">Plan Brasileño de IA con unos 23,000 millones de reales hasta 2028, centrado en innovación empresarial y supercómputo.</p></div>
+    <div class="panel" role="tabpanel" id="c-uruguay" aria-labelledby="t-uruguay" hidden><p class="lead">Estrategia Nacional de IA 2024–2030 con reportes semestrales, y el Plan Ceibal, que enseña IA en escuelas públicas desde hace años.</p></div>
+    <div class="panel" role="tabpanel" id="c-mexico" aria-labelledby="t-mexico" hidden><p class="lead">Presentó en 2026 su Plan Nacional de IA, con la supercomputadora Coatlicue (unos 6,000 millones de pesos y 314 <button class="term" type="button" data-term="petaflops">petaflops</button>) y un Clúster Nacional de Cómputo. El reto es darle continuidad y llevarlo a las empresas (Secihti y ATDT, 2026).</p></div>
+
+    <div class="takeaway"><p>El índice mide eficiencia del ecosistema, no tamaño: estrategia continua, una institución que coordina y talento.</p><a class="next-btn" href="#m8">Siguiente: Pymes →</a></div>
+  </div>
+</section>
+
+<!-- =================== M8 PYMES =================== -->
+<section class="band alt module" id="m8" data-title="Pymes" data-desc="IA para empresas pequeñas" data-min="3" aria-labelledby="m8-title">
+  <div class="inner">
+    <div class="module-head">
+      <span class="eyebrow"><span class="num">08</span> Pymes <span class="time">· 3 min</span></span>
+      <h2 id="m8-title">¿Una pyme realmente puede usar IA?</h2>
+      <p class="objective"><b>Aprenderás</b> qué herramientas de bajo costo existen, qué frena la adopción y por dónde empezar.</p>
+    </div>
+
+    <h3 class="sub" style="margin-top:0">Herramientas al alcance</h3>
+    <ul class="tile-list reveal">
+      <li>Asistentes de IA generativa<small>Planes gratuitos o de suscripción mensual para redactar, resumir y analizar.</small></li>
+      <li>IA dentro del software que ya pagas<small>Funciones integradas en sistemas contables, de facturación, correo o mensajería.</small></li>
+      <li>Automatizaciones sin programar<small>Flujos que conectan formularios, hojas de cálculo y correo.</small></li>
+      <li>Atención al cliente asistida<small>Respuestas sugeridas en mensajería y redes, siempre con revisión humana.</small></li>
+    </ul>
+
+    <h3 class="sub">Lo que frena a las pymes</h3>
+    <div class="stats reveal">
+      <div class="stat key"><b>Información</b><span>La falta de información pesa más que el costo como barrera para automatizar</span><cite>Alegra, 2026</cite></div>
+      <div class="stat"><b data-count="49" data-suffix=" %">49 %</b><span>identifica la falta de talento calificado como obstáculo</span><cite>Strand Partners para AWS, 2026</cite></div>
+      <div class="stat"><b data-count="95" data-suffix=" %">95 %</b><span>de los establecimientos son microempresas; muchas necesitan digitalizarse antes de usar IA</span><cite>INEGI, 2025</cite></div>
+      <div class="stat"><b>22 vs 40 %</b><span>escalamiento de agentes en empresas pequeñas frente a grandes</span><cite>McKinsey, 2026</cite></div>
+    </div>
+
+    <h3 class="sub">Una ruta de cuatro pasos</h3>
+    <ol class="timeline reveal">
+      <li><time>1. Digitalizar</time>Pasar a formato digital ventas, inventario, facturas y clientes.</li>
+      <li><time>2. Activar</time>Usar la IA que ya incluye el software contratado.</li>
+      <li><time>3. Elegir un proceso</time>Uno repetitivo y medible: cobranza, cotizaciones o respuestas frecuentes.</li>
+      <li><time>4. Medir</time>Comparar tiempo, errores y ventas antes y después.</li>
+    </ol>
+
+    <div class="takeaway"><p>Para una pyme, el primer paso no es la IA: es tener sus procesos en digital.</p><a class="next-btn" href="#m9">Siguiente: Riesgos →</a></div>
+  </div>
+</section>
+
+<!-- =================== M9 AGENTES Y RIESGOS =================== -->
+<section class="band deep module" id="m9" data-title="Riesgos" data-desc="Agentes, alucinaciones y regulación" data-min="5" aria-labelledby="m9-title">
+  <div class="inner">
+    <div class="module-head">
+      <span class="eyebrow"><span class="num">09</span> Agentes y riesgos <span class="time">· 5 min</span></span>
+      <h2 id="m9-title">El riesgo no es que la IA se equivoque, sino dejar de notarlo</h2>
+      <p class="objective"><b>Aprenderás</b> a interpretar correctamente el dato de alucinaciones y a reconocer los riesgos de depender de la IA.</p>
+    </div>
+
+    <div class="stats reveal">
+      <div class="stat key"><b>+40 %</b><span>de los proyectos de IA agéntica se cancelará antes de terminar 2027</span><cite>Gartner, 2025</cite></div>
+      <div class="stat"><b>≈ 130</b><span>proveedores ofrecen capacidades agénticas reales entre miles que dicen hacerlo</span><cite>Gartner, 2025</cite></div>
+      <div class="stat"><b>15 %</b><span>de las decisiones laborales cotidianas serían autónomas hacia 2028</span><cite>Gartner, 2025</cite></div>
+    </div>
+
+    <h3 class="sub">Cómo leer el dato de <button class="term" type="button" data-term="alucinacion">alucinaciones</button></h3>
+    <div class="hallu reveal">
+      <div><div class="big">22 – 94 %</div><p>Tasa de alucinación según el modelo, reportada por el AI Index 2026 con la prueba AA-Omniscience.</p></div>
+      <div>
+        <div class="seg" role="tablist" aria-label="Interpretación del dato" data-tabs="hallu">
+          <button role="tab" aria-selected="true" aria-controls="h-wrong" id="t-wrong">Lectura común</button>
+          <button role="tab" aria-selected="false" aria-controls="h-right" id="t-right" tabindex="-1">Lectura correcta</button>
+        </div>
+        <div class="panel reading" role="tabpanel" id="h-wrong" aria-labelledby="t-wrong"><h4>✕ “Entre 22 % y 94 % de lo que dice la IA es falso”</h4><p style="margin:0">Así se suele citar, pero no es lo que mide la prueba.</p></div>
+        <div class="panel reading good" role="tabpanel" id="h-right" aria-labelledby="t-right" hidden><h4>✓ Mide exceso de confianza</h4><p style="margin:0">Cuando el modelo no sabe la respuesta a una pregunta difícil, con qué frecuencia inventa una en lugar de admitir que no sabe. En tareas acotadas, como resumir un documento entregado, la tasa puede ser menor a 1 %.</p></div>
+      </div>
+    </div>
+
+    <h3 class="sub">Cinco riesgos de depender de la IA</h3>
+    <div class="acc">
+      <details><summary>Responsabilidad legal</summary><div class="acc-body"><p>Un tribunal declaró a Air Canada responsable de la información errónea de su chatbot (Moffatt v. Air Canada, 2024). Deloitte Australia reembolsó parte de un informe de 440,000 dólares australianos con referencias inventadas (2025).</p></div></details>
+      <details><summary>Fuga de datos</summary><div class="acc-body"><p>13 % de las organizaciones reportó filtraciones en modelos o aplicaciones de IA; de ellas, 97 % no tenía controles de acceso adecuados. Las herramientas no autorizadas intervinieron en una de cada cinco filtraciones, y solo 37 % tiene políticas de <button class="term" type="button" data-term="gobernanza">gobernanza</button> (IBM, 2025).</p></div></details>
+      <details><summary>Pérdida de criterio</summary><div class="acc-body"><p>A mayor confianza en la IA, menor esfuerzo de pensamiento crítico (Microsoft Research y Carnegie Mellon, 2025).</p></div></details>
+      <details><summary>Acciones autónomas</summary><div class="acc-body"><p>Con los agentes, el error deja de ser una respuesta y se vuelve una acción: un pago, un correo enviado o un registro borrado.</p></div></details>
+      <details><summary>Dependencia y formación del talento</summary><div class="acc-body"><p>Quedar atado a un proveedor expone a cambios de precio y condiciones. Y si la IA hace todo el trabajo rutinario, los principiantes pierden la práctica que antes les enseñaba el oficio (PwC, 2026).</p></div></details>
+    </div>
+
+    <h3 class="sub">Calendario del Reglamento de IA de la Unión Europea</h3>
+    <ol class="timeline">
+      <li class="is-now"><time datetime="2025-08-02">2 ago 2025</time>Modelos de IA de propósito general.</li>
+      <li class="is-now"><time datetime="2026-08-02">2 ago 2026</time>Obligaciones de transparencia (art. 50).</li>
+      <li><time datetime="2027-12-02">2 dic 2027</time>Sistemas de alto riesgo: contratación, evaluación crediticia.</li>
+      <li><time datetime="2028-08-02">2 ago 2028</time>IA en productos regulados, como dispositivos médicos.</li>
+    </ol>
+    <p class="src">Tras la reforma Digital Omnibus de junio de 2026 (Gibson Dunn, 2026).</p>
+
+    <div class="takeaway"><p>La IA prepara; una persona responsable revisa y firma.</p><a class="next-btn" href="#m10">Siguiente: Hacia 2030 →</a></div>
+  </div>
+</section>
+
+<!-- =================== M10 FUTURO =================== -->
+<section class="band alt module" id="m10" data-title="Hacia 2030" data-desc="La empresa en cinco años" data-min="3" aria-labelledby="m10-title">
+  <div class="inner">
+    <div class="module-head">
+      <span class="eyebrow"><span class="num">10</span> Hacia 2030 <span class="time">· 3 min</span></span>
+      <h2 id="m10-title">Una empresa de personas que supervisan agentes</h2>
+      <p class="objective"><b>Aprenderás</b> cómo cambiará la distribución del trabajo y qué rasgos tendrán las empresas en cinco años.</p>
+    </div>
+
+    <div class="stackviz reveal">
+      <div class="seg" role="group" aria-label="Año" id="year-toggle">
+        <button type="button" aria-pressed="true" data-year="hoy">Hoy</button>
+        <button type="button" aria-pressed="false" data-year="2030">2030</button>
+      </div>
+      <div class="stackbar" id="stackbar" role="img" aria-label="Hoy: 47 % de las tareas las hacen personas, 22 % la tecnología y 30 % ambas">
+        <span class="h" style="width:47.5%">47 %</span><span class="t" style="width:22.2%">22 %</span><span class="c" style="width:30.3%">30 %</span>
+      </div>
+      <ul class="legend">
+        <li><i style="background:var(--petrol)"></i>Principalmente personas</li>
+        <li><i style="background:var(--sky)"></i>Principalmente tecnología</li>
+        <li><i style="background:var(--mist)"></i>Combinación de ambas</li>
+      </ul>
+      <p class="src">Distribución de tareas laborales. Fuente: Foro Económico Mundial, 2025.</p>
+    </div>
+
+    <h3 class="sub">Cinco rasgos probables</h3>
+    <ul class="tile-list reveal">
+      <li>Equipos híbridos<small>Personas que supervisan agentes y deciden sobre las excepciones.</small></li>
+      <li>Otra pirámide laboral<small>Menos puestos de entrada rutinarios y más exigencia de criterio desde el inicio.</small></li>
+      <li>Gobernanza de IA estándar<small>Políticas, auditorías y responsables definidos.</small></li>
+      <li>Más distancia entre líderes y rezagados<small>El 20 % más expuesto a la IA creció 163 % en productividad desde 2018 (PwC, 2026).</small></li>
+      <li>Más software hecho en casa<small>32 % ya dejó de comprar algún software porque lo construyó con agentes (McKinsey, 2026).</small></li>
+    </ul>
+
+    <h3 class="sub">Expectativa frente a realidad</h3>
+    <div class="expect reveal">
+      <ul class="chart" data-chart="expect" aria-label="Empresas que esperaban reducir personal frente a las que lo hicieron"></ul>
+    </div>
+    <p class="src">Reducción de personal atribuida a la IA en 2025 (McKinsey, 2026).</p>
+
+    <div class="takeaway"><p>El cambio será profundo, pero más gradual de lo que anuncian los titulares.</p><a class="next-btn" href="#m11">Siguiente: Recomendaciones →</a></div>
+  </div>
+</section>
+
+<!-- =================== M11 RECOMENDACIONES =================== -->
+<section class="band module" id="m11" data-title="Recomendaciones" data-desc="Decisiones y autodiagnóstico" data-min="4" aria-labelledby="m11-title">
+  <div class="inner">
+    <div class="module-head">
+      <span class="eyebrow"><span class="num">11</span> Recomendaciones <span class="time">· 4 min</span></span>
+      <h2 id="m11-title">Cuatro decisiones para pasar de usar a ganar</h2>
+      <p class="objective"><b>Aprenderás</b> qué debe decidir la dirección y evaluarás qué tan lista está una empresa que conozcas.</p>
+    </div>
+
+    <ol class="recs">
+      <li class="reveal"><h4>Empezar por un proceso, no por una herramienta</h4><p>Elegir uno o dos procesos medibles (cobranza, atención, conciliación) y rediseñarlos completos antes de licenciar a todos.</p></li>
+      <li class="reveal"><h4>Definir la métrica de negocio antes de invertir</h4><p>Cada proyecto necesita un indicador financiero u operativo. El tiempo ahorrado que no se reasigna no es utilidad.</p></li>
+      <li class="reveal"><h4>Establecer reglas de uso y supervisión humana</h4><p>Qué datos pueden entrar, quién aprueba lo que sale y prohibición de herramientas no autorizadas.</p></li>
+      <li class="reveal"><h4>Invertir en las personas tanto como en la tecnología</h4><p>Capacitar para usar la IA con criterio, en especial a los perfiles de entrada.</p></li>
+    </ol>
+
+    <h3 class="sub">Autodiagnóstico: ¿qué tan lista está la empresa?</h3>
+    <p>Piensa en una empresa que conozcas (donde trabajas, tu familia o un caso de clase) y marca lo que ya cumple.</p>
+    <div class="diag">
+      <div class="checks" id="checks"></div>
+      <aside class="diag-result" aria-live="polite">
+        <span>Resultado</span>
+        <span class="score" id="diag-score">0/8</span>
+        <span class="level" id="diag-level">Etapa inicial</span>
+        <p id="diag-msg">Empieza por digitalizar procesos y definir quién es responsable del uso de la IA.</p>
+        <button class="btn" type="button" id="diag-reset">Reiniciar</button>
+      </aside>
+    </div>
+
+    <div class="takeaway"><p>Primero el proceso y la métrica; después la herramienta.</p><a class="next-btn" href="#m12">Siguiente: Laboratorio de prompts →</a></div>
+  </div>
+</section>
+
+<!-- =================== M12 LABORATORIO DE PROMPTS =================== -->
+<section class="band deep module" id="m12" data-title="Prompts" data-desc="Laboratorio y bitácora" data-min="7" aria-labelledby="m12-title">
+  <div class="inner">
+    <div class="module-head">
+      <span class="eyebrow"><span class="num">12</span> Laboratorio de prompts <span class="time">· 7 min</span></span>
+      <h2 id="m12-title">Pedirle bien a la IA también es una habilidad</h2>
+      <p class="objective"><b>Aprenderás</b> los siete componentes de un buen prompt, construirás uno propio y revisarás la bitácora evaluada de esta investigación.</p>
+    </div>
+
+    <div class="components reveal">
+      <div><b>R</b><h4>Rol</h4><p>Quién debe ser la IA: “actúa como analista financiero”.</p></div>
+      <div><b>C</b><h4>Contexto</h4><p>La situación: empresa, proyecto, datos previos.</p></div>
+      <div><b>T</b><h4>Tarea</h4><p>Qué debe hacer, con un verbo claro.</p></div>
+      <div><b>F</b><h4>Formato</h4><p>Cómo entregarlo: tabla, viñetas, extensión.</p></div>
+      <div><b>A</b><h4>Audiencia</h4><p>Para quién es y con qué tono.</p></div>
+      <div><b>Rs</b><h4>Restricciones</h4><p>Qué evitar o qué límites respetar.</p></div>
+      <div><b>Q</b><h4>Calidad</h4><p>Cómo saber que quedó bien: fuentes, criterios.</p></div>
+    </div>
+
+    <h3 class="sub">Constructor de prompts</h3>
+    <p>Llena los campos y observa cómo se arma el prompt y cómo sube su completitud. Puedes cargar un ejemplo para empezar.</p>
+    <div class="builder">
+      <form id="builder" autocomplete="off"></form>
+      <div class="output">
+        <div class="quality">
+          <div class="row"><span>Completitud</span><span id="q-val">0/7</span></div>
+          <div class="bar"><i id="q-bar"></i></div>
+          <div class="chips" id="q-chips"></div>
+        </div>
+        <pre id="prompt-out" aria-live="polite"></pre>
+        <div class="actions">
+          <button class="btn btn-amber" type="button" id="copy-prompt">Copiar prompt</button>
+          <button class="btn btn-ghost" type="button" id="example-prompt">Cargar ejemplo</button>
+          <button class="btn btn-ghost" type="button" id="clear-prompt">Limpiar</button>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="sub">Bitácora evaluada de esta investigación</h3>
+    <div class="avg-line"><b id="log-avg">8.1</b><span>promedio sobre 10 en los 15 prompts que construyeron esta investigación. Selecciona uno para ver su evaluación.</span></div>
+    <div class="log">
+      <ol class="log-chart" id="log-chart"></ol>
+      <div class="log-detail" id="log-detail" aria-live="polite"></div>
+    </div>
+    <p class="src">Rúbrica basada en la guía de ingeniería de prompts de Anthropic y en White et al. (2023). Los componentes heredados del contexto de la conversación cuentan como medio punto.</p>
+
+    <div class="takeaway"><p>Un buen prompt define rol, contexto, tarea, formato, audiencia, límites y criterios de éxito.</p><a class="next-btn" href="#m13">Siguiente: Evaluación →</a></div>
+  </div>
+</section>
+
+<!-- =================== M13 EVALUACIÓN =================== -->
+<section class="band alt module" id="m13" data-title="Evaluación" data-desc="Pon a prueba lo aprendido" data-min="5" aria-labelledby="m13-title">
+  <div class="inner">
+    <div class="module-head">
+      <span class="eyebrow"><span class="num">13</span> Evaluación <span class="time">· 5 min</span></span>
+      <h2 id="m13-title">Pon a prueba lo aprendido</h2>
+      <p class="objective"><b>Comprobarás</b> tu comprensión con siete preguntas. Cada respuesta incluye su explicación.</p>
+    </div>
+    <div class="quiz" id="quiz"></div>
+    <div class="takeaway"><p>Terminaste la ruta. Revisa las fuentes para profundizar en cualquier dato.</p><a class="next-btn" href="#fuentes">Ver fuentes →</a></div>
+  </div>
+</section>
+
+<!-- =================== FUENTES =================== -->
+<section class="band" id="fuentes" aria-labelledby="fuentes-title">
+  <div class="inner">
+    <div class="module-head">
+      <span class="eyebrow">Referencias</span>
+      <h2 id="fuentes-title">Fuentes</h2>
+      <p class="objective">Se priorizaron estudios, organismos e instituciones. Algunos datos de México se conocieron a través de medios que reportaron los estudios originales; conviene verificarlos en el documento fuente antes de citarlos.</p>
+    </div>
+    <div class="sources">
+      <div>
+        <h3>Organismos e instituciones académicas</h3>
+        <ul>
+          <li><a href="https://hai.stanford.edu/ai-index/2026-ai-index-report" target="_blank" rel="noopener">Stanford HAI, AI Index Report 2026</a></li>
+          <li><a href="https://www.weforum.org/publications/the-future-of-jobs-report-2025/" target="_blank" rel="noopener">Foro Económico Mundial, Future of Jobs Report 2025</a></li>
+          <li><a href="https://www.ilo.org/publications/generative-ai-and-jobs-refined-global-index-occupational-exposure" target="_blank" rel="noopener">OIT, Generative AI and Jobs (2025)</a></li>
+          <li><a href="https://www.nber.org/papers/w31161" target="_blank" rel="noopener">Brynjolfsson, Li y Raymond, Generative AI at Work (NBER, 2023)</a></li>
+          <li><a href="https://siepr.stanford.edu/publications/working-paper/canaries-coal-mine-six-facts-about-recent-employment-effects-artificial" target="_blank" rel="noopener">Brynjolfsson, Chandar y Chen, Canaries in the Coal Mine? (2025)</a></li>
+          <li><a href="https://www.cepal.org/es/publicaciones/82514-indice-latinoamericano-inteligencia-artificial-ilia-2025" target="_blank" rel="noopener">CEPAL y CENIA, Índice Latinoamericano de IA 2025</a></li>
+          <li><a href="https://artificialanalysis.ai/articles/aa-omniscience-knowledge-hallucination-benchmark" target="_blank" rel="noopener">Artificial Analysis, AA-Omniscience (2025)</a></li>
+          <li><a href="https://doi.org/10.1145/3706598.3713778" target="_blank" rel="noopener">Lee et al., The Impact of Generative AI on Critical Thinking (CHI, 2025)</a></li>
+          <li><a href="https://www.inegi.org.mx/programas/ce/2024/" target="_blank" rel="noopener">INEGI, Censos Económicos 2024</a></li>
+          <li><a href="https://doi.org/10.48550/arXiv.2302.11382" target="_blank" rel="noopener">White et al., A Prompt Pattern Catalog (2023)</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Consultoras, gobierno y documentos jurídicos</h3>
+        <ul>
+          <li><a href="https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai" target="_blank" rel="noopener">McKinsey, The State of AI in 2026</a></li>
+          <li><a href="https://www.gartner.com/en/newsroom/press-releases/2026-09-16-gartner-forecasts-worldwide-ai-spending-to-grow-49-point-5-percent-in-2026" target="_blank" rel="noopener">Gartner, pronóstico de gasto en IA (septiembre de 2026)</a></li>
+          <li><a href="https://www.gartner.com/en/newsroom/press-releases/2026-10-20-gartner-says-44-percent-of-ceos-struggle-to-demonstrate-ai-financial-returns-as-technology-becomes-central-to-growth" target="_blank" rel="noopener">Gartner, encuesta a CEO (octubre de 2026)</a></li>
+          <li><a href="https://www.gartner.com/en/newsroom/press-releases/2025-06-25-gartner-predicts-over-40-percent-of-agentic-ai-projects-will-be-canceled-by-end-of-2027" target="_blank" rel="noopener">Gartner, proyectos de IA agéntica (2025)</a></li>
+          <li><a href="https://www.pwc.com/gx/en/news-room/press-releases/2026/pwc-2026-ai-jobs-barometer.html" target="_blank" rel="noopener">PwC, 2026 Global AI Jobs Barometer</a></li>
+          <li><a href="https://www.ibm.com/think/x-force/2025-cost-of-a-data-breach-navigating-ai" target="_blank" rel="noopener">IBM, Cost of a Data Breach Report 2025</a></li>
+          <li><a href="https://www.shrm.org/in/topics-tools/research/state-of-ai-hr-2026/full-report" target="_blank" rel="noopener">SHRM, The State of AI in HR 2026</a></li>
+          <li><a href="https://openai.com/index/klarna" target="_blank" rel="noopener">OpenAI, caso Klarna (2024)</a></li>
+          <li><a href="https://secihti.mx/wp-content/uploads/2026/06/Comunicado_conjunto_18062026.pdf" target="_blank" rel="noopener">Secihti y ATDT, Clúster Nacional de Cómputo e IA (2026)</a></li>
+          <li><a href="https://www.americanbar.org/groups/business_law/resources/business-law-today/2024-february/bc-tribunal-confirms-companies-remain-liable-information-provided-ai-chatbot/" target="_blank" rel="noopener">Moffatt v. Air Canada, 2024 BCCRT 149 (análisis de la ABA)</a></li>
+          <li><a href="https://www.gibsondunn.com/eu-ai-act-omnibus-agreement-postponed-high-risk-deadlines-and-other-key-changes/" target="_blank" rel="noopener">Gibson Dunn, reforma del Reglamento de IA de la UE (2026)</a></li>
+          <li><a href="https://docs.claude.com/en/docs/build-with-claude/prompt-engineering/overview" target="_blank" rel="noopener">Anthropic, Prompt engineering overview</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="inner">
+    <div>
+      <p class="who">Angel Israel Orozco Cortés</p>
+      <p>Licenciatura en Informática Administrativa · Material para evaluación de unidad: Ingeniería de Prompt · Octubre de 2026</p>
+    </div>
+    <p>Datos actualizados a octubre de 2026.</p>
+  </div>
+</footer>
+
+<!-- Glosario -->
+<dialog class="glossary" id="glossary" aria-labelledby="gl-title">
+  <div class="gl-head">
+    <h2 id="gl-title">Glosario</h2>
+    <button class="icon-btn" type="button" id="close-glossary" aria-label="Cerrar glosario">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+  </div>
+  <div class="gl-body">
+    <label class="sr-only" for="gl-search">Buscar término</label>
+    <input id="gl-search" type="search" placeholder="Buscar término…">
+    <dl id="gl-list"></dl>
+  </div>
+</dialog>
+
+<div class="popover" id="popover" role="tooltip" hidden></div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<button class="to-top" type="button" id="to-top" aria-label="Volver al inicio">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<script src="assets/js/app.js" defer></script>
+</body>
+</html>
